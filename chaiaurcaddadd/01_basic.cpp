@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main() {
-    wcout << "Hello world";
+int main()
+{
+    clog << "An error occurred";
     return 0;
 }

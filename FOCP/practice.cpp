@@ -2,19 +2,19 @@
 
 using namespace std;
 int main() {
-    int n;
+    int rows;
     cout << "Enter the number of rows for pattern: ";
-    cin >> n;
+    cin >> rows;
 
     //outer loop ( i ) prints the no rows 
-    for (int i = n; i >= 1; i--) {
+    for (int i = rows; i >= 1; i--) {
         // inner loop ( k ) prints the indentation of the pattern
-        for (int k = 1; k <= n - i; k++) {
+        for (int k = 1; k <= rows - i; k++) {
             cout << " ";
         }
         // inner loop ( j ) prints the required symbol.
-        for (int j = 1; j <= i; j++) {
-            cout << "* ";
+        for (int j = 1; j <= 2 * i - 1; j++) {
+            cout << "*";
         }
         cout << endl; // ends the current line after current line ( i ) has been printed.
     }
