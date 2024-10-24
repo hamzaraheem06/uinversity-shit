@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+void Hamza() {
+    cout << "Hello Hamza \n";
+}
+
+int power(int a, int b) {
+    int result = 1;
+    for (int i = 1; i <= b; i++)
+        result *= a;
+    return result;
+}
+
+int factorial(int num) {
+    int fact = 1;
+    for (int i = num; i >= 1; i--)
+        fact *= i;
+    return fact;
+}
+
